@@ -8,5 +8,6 @@ int main() {
         printf("%d x %d = %d\n", n, i, n * i);
   }
   return 0;
-    }
+}
+
 
