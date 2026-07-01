@@ -1,8 +1,11 @@
 //Q69.
 #include<stdio.h>
 int main(){
-    int a[]={5,2,4,1,3};
-    int i,j,temp;
+    int a[5],i,j,temp;
+    printf("enter 5 numbers:");
+    for(i=0;i<5;i++){
+        scanf("%d",&a[i]);
+    }
     for (int i = 0; i < 5; i++){
         for(int j=0;j<4-i;j++){
             if(a[j]>a[j+1]){
@@ -12,6 +15,7 @@ int main(){
             }
         }
     }
+    printf("the sorted array is:");
     for(i=0;i<5;i++){
         printf("%d ", a[i]);
     }

@@ -1,13 +1,18 @@
 //Q71.
 #include <stdio.h>
 int main() {
-    int a[5]={1,2,3,4,5};
-    int low=0,high=4,mid;
-    int key=4;
+    int a[5],i,low=0,high=4,mid,key;
+    printf("enter 5 numbers:");
+    for(i=0;i<5;i++){
+        scanf("%d",&a[i]);
+    }
+    printf("enter the element to be searched:");
+    scanf("%d",&key);
     while(low<=high)
     {
         mid=(low+high)/2;
-        if(a[mid]==key){
+        if(a[mid]==key)
+        {
             printf("the element is found at %d", mid+1);
             break;
         }

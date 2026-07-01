@@ -1,19 +1,26 @@
 //Q70.
 #include<stdio.h>
 int main(){
-    int a[]={5,2,3,4,1};
-    int i,j,min,temp;
-    for (int i = 0; i < 4; i++){
+    int a[5],i,j,min,temp;
+    printf("enter 5 numbers:");
+    for(i=0;i<5;i++){
+        scanf("%d",&a[i]);
+    }
+    for (int i = 0; i < 4; i++)
+    {
         min=i;
-        for(int j=i+1;j<5;j++){
-            if(a[j]<a[min]){
+        for(int j=i+1;j<5;j++)
+        {
+            if(a[j]<a[min])
+            {
                 min=j;
             }
-            temp=a[i];
-            a[i]=a[min];
-            a[min]=temp;
         }
+        temp=a[i];
+        a[i]=a[min];
+        a[min]=temp;
     }
+    printf("the sorted array is:");
     for(i=0;i<5;i++){
         printf("%d ", a[i]);
     }
