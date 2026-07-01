@@ -1,0 +1,18 @@
+//Q117.
+#include <stdio.h>
+int main()
+{
+    int roll[3], i;
+    char name[3][50];
+    for(i=0;i<3;i++)
+    {
+        printf("Enter roll number and name of student %d: ", i+1);
+        scanf("%d %s", &roll[i], name[i]);
+    }
+    printf("\nStudent records:\n");
+    for(i=0;i<3;i++)
+    {
+        printf("Roll number: %d, Name: %s\n", roll[i], name[i]);
+    }
+    return 0;
+}
