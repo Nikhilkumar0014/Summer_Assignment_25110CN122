@@ -23,4 +23,5 @@ int main()
      printf("not prime");
     return 0;
 }
-6
+
+
